@@ -1,0 +1,221 @@
+<html>
+  <head>
+    <title>MobileNet</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
+    <script src="https://unpkg.com/ml5@0.4.3/dist/ml5.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/webcamjs/1.0.26/webcam.js"></script>
+
+    <link rel="stylesheet" type="text/css" href="style.css">
+  </head>
+
+  <body>
+    <center>
+      <div class="col-xs-12 header_div"> 
+        <h2>Image Identification App  
+        </h2> 
+    </div>
+
+    <ol>
+        <div class="text_images_and_result" id="div">
+            <li>
+                <b>Test Image - </b><img src="airpod.HEIC" id="picture" class="img-responsive">
+            </li>
+            <h5>Output on <b>Microsoft Azure </b> - 
+                <span> DISHWARE </span>
+            </h5>
+            <h5>Output on <b>MobileNet Model </b> - 
+                <span> </span>
+             </h5>
+
+            <div class="bob3">
+                <h4>Result - </h4>
+                <hr>
+                <h4> </h4>
+            </div>
+        </div>
+        <hr>
+
+        <div class="text_images_and_result" id="div">
+            <li>
+                <b>Test Image - </b><img src="apple.HEIC" id="pic" class="img-responsive">
+            </li>
+            <h5>Output on <b>Microsoft Azure </b> - 
+                <span> APPLE</span>
+            </h5>
+            <h5>Output on <b>MobileNet Model </b> - 
+                <span> </span>
+            </h5>
+
+            <div class="bob3">
+                <h4>Result - </h4>
+                <hr>
+                <h4> </h4>
+            </div>
+        </div>
+        <hr>
+
+        <div class="text_images_and_result" id="div">
+            <li>
+                <b>Test Image - </b><img src="banana.HEIC" id="pic" class="img-responsive">
+            </li>
+            <h5>Output on <b>Microsoft Azure </b> - 
+                <span> BANANA </span>
+            </h5>
+            <h5>Output on <b>MobileNet Model </b> - 
+                <span> </span>
+            </h5>
+
+            <div class="bob3">
+                <h4>Result - </h4>
+                <hr>
+                <h4> </h4>
+            </div>
+        </div>
+        <hr>
+
+        <div class="text_images_and_result" id="div">
+            <li>
+                <b>Test Image - </b><img src="chips.HEIC" id="pic" class="img-responsive">
+            </li>
+            <h5>Output on <b>Microsoft Azure </b> - 
+                <span> FOOD </span>
+            </h5>
+            <h5>Output on <b>MobileNet Model </b> - 
+                <span> </span>
+            </h5>
+
+            <div class="bob3">
+                <h4>Result - </h4>
+                <hr>
+                <h4> </h4>
+            </div>
+        </div>
+        <hr>
+
+        <div class="text_images_and_result" id="div">
+            <li>
+                <b>Test Image - </b><img src="cup.HEIC" id="pic" class="img-responsive">
+            </li>
+            <h5>Output on <b>Microsoft Azure </b> - 
+                <span> TEA/BLACK COFFEE</span>
+            </h5>
+            <h5>Output on <b>MobileNet Model </b> - 
+                <span> </span>
+            </h5>
+
+            <div class="bob3">
+                <h4>Result - </h4>
+                <hr>
+                <h4> </h4>
+            </div>
+        </div>
+        <hr>
+
+        <div class="text_images_and_result" id="div">
+            <li>
+                <b>Test Image - </b><img src="led_pencils.HEIC" id="pic" class="img-responsive">
+            </li>
+            <h5>Output on <b>Microsoft Azure </b> - 
+                <span> OFFICE SUPPLIES</span>
+            </h5>
+            <h5>Output on <b>MobileNet Model </b> - 
+                <span> </span>
+            </h5>
+
+            <div class="bob3">
+                <h4>Result - </h4>
+                <hr>
+                <h4> </h4>
+            </div>
+        </div>
+        <hr>
+
+        <div class="text_images_and_result" id="div">
+            <li>
+                <b>Test Image - </b><img src="motts.HEIC" id="pic" class="img-responsive">
+            </li>
+            <h5>Output on <b>Microsoft Azure </b> - 
+                <span> SNACK </span>
+            </h5>
+            <h5>Output on <b>MobileNet Model </b> - 
+                <span> </span>
+            </h5>
+
+            <div class="bob3">
+                <h4>Result - </h4>
+                <hr>
+                <h4> </h4>
+            </div>
+        </div>
+        <hr>
+
+        <div class="text_images_and_result" id="div">
+            <li>
+                <b>Test Image - </b><img src="spoon.HEIC" id="pic" class="img-responsive">
+            </li>
+            <h5>Output on <b>Microsoft Azure </b> - 
+                <span> SPOON </span>
+            </h5>
+            <h5>Output on <b>MobileNet Model </b> - 
+                <span> </span>
+            </h5>
+
+            <div class="bob3">
+                <h4>Result - </h4>
+                <hr>
+                <h4> </h4>
+            </div>
+        </div>
+        <hr>
+
+        <div class="text_images_and_result" id="div">
+            <li>
+                <b>Test Image - </b><img src="toilet_paper.HEIC" id="pic" class="img-responsive">
+            </li>
+            <h5>Output on <b>Microsoft Azure </b> - 
+                <span> CUP </span>
+            </h5>
+            <h5>Output on <b>MobileNet Model </b> - 
+                <span> </span>
+            </h5>
+
+            <div class="bob3">
+                <h4>Result - </h4>
+                <hr>
+                <h4> </h4>
+            </div>
+        </div>
+        <hr>
+
+        <div class="text_images_and_result" id="div">
+            <li>
+                <b>Test Image - </b><img src="water_bottle.HEIC" id="pic" class="img-responsive">
+            </li>
+            <h5>Output on <b>Microsoft Azure </b> - 
+                <span> BOTTLE </span>
+            </h5>
+            <h5>Output on <b>MobileNet Model </b> - 
+                <span> </span>
+            </h5>
+
+            <div class="bob3">
+                <h4>Result - </h4>
+                <hr>
+                <h4> </h4>
+            </div>
+        </div>
+        <hr>
+
+
+
+    <div class="copy_right_footer">
+        Developed by - Jonathan Isaac
+    </div>
+
+<script src="main.js"></script>
+</body>
+</html>
